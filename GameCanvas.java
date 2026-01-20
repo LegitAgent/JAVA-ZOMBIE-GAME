@@ -15,9 +15,9 @@
 	of my program.
 **/
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.*;
+import javax.swing.*;
 
 /*
  * GameCanvas is where all the shapes, images and animations are drawn.
@@ -169,18 +169,18 @@ public class GameCanvas extends JComponent {
 		for(Enemy enemy : enemies) {
 			if(enemy.getHealth() <= 0) {
 				switch(enemy.getEnemyName()) {
-					case "Normal Zombie":
-						player1.addCoins(10);
-						player2.addCoins(10);
-						break;
-					case "Big Zombie":
-						player1.addCoins(50);
-						player2.addCoins(50);
-						break;
-					case "Fast Zombie":
-						player1.addCoins(25);
-						player2.addCoins(25);
-						break;
+					case "Normal Zombie" -> {
+                                            player1.addCoins(10);
+                                            player2.addCoins(10);
+                                }
+					case "Big Zombie" -> {
+                                            player1.addCoins(50);
+                                            player2.addCoins(50);
+                                }
+					case "Fast Zombie" -> {
+                                            player1.addCoins(25);
+                                            player2.addCoins(25);
+                                }
 				}
 				enemies.remove(enemy);
 				break;
@@ -357,6 +357,7 @@ public class GameCanvas extends JComponent {
 				enemy.setMoveSpeed(enemy.getOriginalSpeed());
 			}
 			else if(!horizontalCollision && !verticalCollision && !collideWithID && singlePlayer) {
+                System.out.println(horizontalCollision + " " + verticalCollision);
 				enemy.setMoveSpeed(enemy.getOriginalSpeed());
 			}
 			counter++;
@@ -455,8 +456,8 @@ public class GameCanvas extends JComponent {
 	public void newWave(double waveNo) {
 		Random random = new Random();
 		// determines amount of enemies to generate.
-		int numberOfEnemiesBig = 0;
-		int numberOfEnemiesFast = 0;
+		int numberOfEnemiesBig = 1;
+		int numberOfEnemiesFast = 3;
 		int numberOfEnemiesNormal = random.nextInt(11) + (int) (5 * waveNo);
 		if(waveNo >= 5) {
 			numberOfEnemiesBig = (int) waveNo - 4;

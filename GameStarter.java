@@ -26,5 +26,4 @@ public class GameStarter{
 		frame.connectToServer();
 		frame.setUpGUI();
 	}
-	
 }
