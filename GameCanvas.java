@@ -49,46 +49,46 @@ public class GameCanvas extends JComponent {
 	public static ArrayList<Enemy> enemies = new ArrayList<>();
 
 	// BG & Miscellaneous
-	Image bgImg = new ImageIcon("Background.png").getImage();
-	Image hpImg = new ImageIcon("HP.png").getImage();
+	Image bgImg = new ImageIcon("Images/Background.png").getImage();
+	Image hpImg = new ImageIcon("Images/HP.png").getImage();
 
 	// Player 1 Animation Frames
-	ImageIcon player1ImageIdle1 = new ImageIcon("Player1_Idle1.png");
-	ImageIcon player1ImageIdle2 = new ImageIcon("Player1_Idle2.png");
-	ImageIcon player1ImageWalk1 = new ImageIcon("Player1_Walk1.png");
-	ImageIcon player1ImageWalk2 = new ImageIcon("Player1_Walk2.png");
-	ImageIcon player1ImageWalk3 = new ImageIcon("Player1_Walk3.png");
-	ImageIcon player1ImageWalk4 = new ImageIcon("Player1_Walk4.png");
-	ImageIcon player1ImageDead = new ImageIcon("Player1Dead.png");
+	ImageIcon player1ImageIdle1 = new ImageIcon("Images/Player1_Idle1.png");
+	ImageIcon player1ImageIdle2 = new ImageIcon("Images/Player1_Idle2.png");
+	ImageIcon player1ImageWalk1 = new ImageIcon("Images/Player1_Walk1.png");
+	ImageIcon player1ImageWalk2 = new ImageIcon("Images/Player1_Walk2.png");
+	ImageIcon player1ImageWalk3 = new ImageIcon("Images/Player1_Walk3.png");
+	ImageIcon player1ImageWalk4 = new ImageIcon("Images/Player1_Walk4.png");
+	ImageIcon player1ImageDead = new ImageIcon("Images/Player1Dead.png");
 
 	// Player 2 Animation Frames
-	ImageIcon player2ImageIdle1 = new ImageIcon("Player2_Idle1.png");
-	ImageIcon player2ImageIdle2 = new ImageIcon("Player2_Idle2.png");
-	ImageIcon player2ImageWalk1 = new ImageIcon("Player2_Walk1.png");
-	ImageIcon player2ImageWalk2 = new ImageIcon("Player2_Walk2.png");
-	ImageIcon player2ImageWalk3 = new ImageIcon("Player2_Walk3.png");
-	ImageIcon player2ImageWalk4 = new ImageIcon("Player2_Walk4.png");
-	ImageIcon player2ImageDead = new ImageIcon("Player2Dead.png");
+	ImageIcon player2ImageIdle1 = new ImageIcon("Images/Player2_Idle1.png");
+	ImageIcon player2ImageIdle2 = new ImageIcon("Images/Player2_Idle2.png");
+	ImageIcon player2ImageWalk1 = new ImageIcon("Images/Player2_Walk1.png");
+	ImageIcon player2ImageWalk2 = new ImageIcon("Images/Player2_Walk2.png");
+	ImageIcon player2ImageWalk3 = new ImageIcon("Images/Player2_Walk3.png");
+	ImageIcon player2ImageWalk4 = new ImageIcon("Images/Player2_Walk4.png");
+	ImageIcon player2ImageDead = new ImageIcon("Images/Player2Dead.png");
 
 	// Normal Zombie Animation Frames
-	ImageIcon zombieWalk1 = new ImageIcon("ZombieWalk1.png");
-	ImageIcon zombieWalk2 = new ImageIcon("ZombieWalk2.png");
-	ImageIcon zombieWalk3 = new ImageIcon("ZombieWalk3.png");
-	ImageIcon zombieWalk4 = new ImageIcon("ZombieWalk4.png");
-	ImageIcon zombieAttack1 = new ImageIcon("ZombieAttack1.png");
+	ImageIcon zombieWalk1 = new ImageIcon("Images/ZombieWalk1.png");
+	ImageIcon zombieWalk2 = new ImageIcon("Images/ZombieWalk2.png");
+	ImageIcon zombieWalk3 = new ImageIcon("Images/ZombieWalk3.png");
+	ImageIcon zombieWalk4 = new ImageIcon("Images/ZombieWalk4.png");
+	ImageIcon zombieAttack1 = new ImageIcon("Images/ZombieAttack1.png");
 
 	// Big Zombie Animation Frames
-	ImageIcon bigZombieWalk1 = new ImageIcon("BigZombieWalk1.png");
-	ImageIcon bigZombieWalk2 = new ImageIcon("BigZombieWalk2.png");
-	ImageIcon bigZombieWalk3 = new ImageIcon("BigZombieWalk3.png");
-	ImageIcon bigZombieWalk4 = new ImageIcon("BigZombieWalk4.png");
-	ImageIcon bigZombieAttack1 = new ImageIcon("BigZombieAttack2.png");
+	ImageIcon bigZombieWalk1 = new ImageIcon("Images/BigZombieWalk1.png");
+	ImageIcon bigZombieWalk2 = new ImageIcon("Images/BigZombieWalk2.png");
+	ImageIcon bigZombieWalk3 = new ImageIcon("Images/BigZombieWalk3.png");
+	ImageIcon bigZombieWalk4 = new ImageIcon("Images/BigZombieWalk4.png");
+	ImageIcon bigZombieAttack1 = new ImageIcon("B=Images/BigZombieAttack2.png");
 
 	// Fast Zombie Animation Frames
-	ImageIcon fastZombieWalk1 = new ImageIcon("FastZombieWalk1.png");
-	ImageIcon fastZombieWalk2 = new ImageIcon("FastZombieWalk2.png");
-	ImageIcon fastZombieWalk3 = new ImageIcon("FastZombieWalk3.png");
-	ImageIcon fastZombieAttack1 = new ImageIcon("FastZombieAttack.png");
+	ImageIcon fastZombieWalk1 = new ImageIcon("Images/FastZombieWalk1.png");
+	ImageIcon fastZombieWalk2 = new ImageIcon("Images/FastZombieWalk2.png");
+	ImageIcon fastZombieWalk3 = new ImageIcon("Images/FastZombieWalk3.png");
+	ImageIcon fastZombieAttack1 = new ImageIcon("Images/FastZombieAttack.png");
 
 	/**
 	 * Constructor of GameCanvas
@@ -357,7 +357,6 @@ public class GameCanvas extends JComponent {
 				enemy.setMoveSpeed(enemy.getOriginalSpeed());
 			}
 			else if(!horizontalCollision && !verticalCollision && !collideWithID && singlePlayer) {
-                System.out.println(horizontalCollision + " " + verticalCollision);
 				enemy.setMoveSpeed(enemy.getOriginalSpeed());
 			}
 			counter++;

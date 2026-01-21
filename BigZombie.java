@@ -18,7 +18,6 @@
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.AffineTransform;
-
 import javax.swing.ImageIcon;
 /**
 * Creates the class for the big zombie. It implements the enemy class.
@@ -49,7 +48,7 @@ public class BigZombie implements Enemy {
         height = 75;
         this.x = x;
         this.y = y;
-        zombieImage = new ImageIcon("BigZombieWalk1.png").getImage();
+        zombieImage = new ImageIcon("Images/BigZombieWalk1.png").getImage();
     }
 /**
 * @public gives the health of the zombie

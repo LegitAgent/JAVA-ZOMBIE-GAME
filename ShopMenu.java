@@ -21,15 +21,15 @@ public class ShopMenu implements ActionListener {
         this.player = player;
         startingUpgradePrice = 3000;
         // ImageIcons
-        ImageIcon healthImg = new ImageIcon("HealthPerk.png");
-        ImageIcon reloadImg = new ImageIcon("ReloadPerk.png");
-        ImageIcon speedImg = new ImageIcon("SpeedPerk.png");
-        ImageIcon medKitImg = new ImageIcon("Medkit.png");
-        ImageIcon rifleImg = new ImageIcon("Rifle.png");
-        ImageIcon bowImg = new ImageIcon("Bow.png");
-        ImageIcon sniperImg = new ImageIcon("Sniper.png");
-        ImageIcon slingShotImg = new ImageIcon("Slingshot.png");
-        ImageIcon upgradeGunImg = new ImageIcon("PackAPunch.PNG");
+        ImageIcon healthImg = new ImageIcon("Images/HealthPerk.png");
+        ImageIcon reloadImg = new ImageIcon("Images/ReloadPerk.png");
+        ImageIcon speedImg = new ImageIcon("Images/SpeedPerk.png");
+        ImageIcon medKitImg = new ImageIcon("Images/Medkit.png");
+        ImageIcon rifleImg = new ImageIcon("Images/Rifle.png");
+        ImageIcon bowImg = new ImageIcon("Images/Bow.png");
+        ImageIcon sniperImg = new ImageIcon("Images/Sniper.png");
+        ImageIcon slingShotImg = new ImageIcon("Images/Slingshot.png");
+        ImageIcon upgradeGunImg = new ImageIcon("Images/PackAPunch.PNG");
 
 
         // Declaration of components

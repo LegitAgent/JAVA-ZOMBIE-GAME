@@ -18,7 +18,6 @@
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.AffineTransform;
-
 import javax.swing.ImageIcon;
 /**
 * Creates the class for the normal zombie. It implements the enemy class.
@@ -49,7 +48,7 @@ public class NormalZombie implements Enemy {
         height = 30;
         this.x = x;
         this.y = y;
-        zombieImage = new ImageIcon("ZombieWalk1.png").getImage();
+        zombieImage = new ImageIcon("Images/ZombieWalk1.png").getImage();
     }
 /**
 * @public gives the health of the zombie

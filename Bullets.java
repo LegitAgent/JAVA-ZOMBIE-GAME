@@ -17,7 +17,6 @@
 
 import java.awt.*;
 import java.awt.geom.*;
-
 import javax.swing.ImageIcon;
 /**
 * Creates the class for the bullet. It manipulates where the bullet is, where it is going, and what type it is.
@@ -32,17 +31,17 @@ public class Bullets {
     private boolean inverseX, inverseY, infinite = false;
     private int upgrades;
 
-    Image startBulletNormImg = new ImageIcon("BasicBullet.png").getImage();
-    Image rifleBulletNormImg = new ImageIcon("RifleBullet.png").getImage();
-    Image bowBulletNormImg = new ImageIcon("BowBullet.png").getImage();
-    Image sniperBulletNormImg = new ImageIcon("SniperBullet.png").getImage();
-    Image slingBulletNormImg = new ImageIcon("SlingshotBullet.png").getImage();
+    Image startBulletNormImg = new ImageIcon("Images/BasicBullet.png").getImage();
+    Image rifleBulletNormImg = new ImageIcon("Images/RifleBullet.png").getImage();
+    Image bowBulletNormImg = new ImageIcon("Images/BowBullet.png").getImage();
+    Image sniperBulletNormImg = new ImageIcon("Images/SniperBullet.png").getImage();
+    Image slingBulletNormImg = new ImageIcon("Images/SlingshotBullet.png").getImage();
 
-    Image startBulletUpgImg = new ImageIcon("BasicBullet2.png").getImage();
-    Image rifleBulletUpgImg = new ImageIcon("RifleBullet2.png").getImage();
-    Image bowBulletUpgImg = new ImageIcon("BowBullet2.png").getImage();
-    Image sniperBulletUpgImg = new ImageIcon("SniperBullet2.png").getImage();
-    Image slingBulletUpgImg = new ImageIcon("SlingshotBullet2.png").getImage();
+    Image startBulletUpgImg = new ImageIcon("Images/BasicBullet2.png").getImage();
+    Image rifleBulletUpgImg = new ImageIcon("Images/RifleBullet2.png").getImage();
+    Image bowBulletUpgImg = new ImageIcon("Images/BowBullet2.png").getImage();
+    Image sniperBulletUpgImg = new ImageIcon("Images/SniperBullet2.png").getImage();
+    Image slingBulletUpgImg = new ImageIcon("Images/SlingshotBullet2.png").getImage();
 
 /**
 * @constructor

@@ -18,7 +18,6 @@
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.AffineTransform;
-
 import javax.swing.ImageIcon;
 /**
 * Creates the class for the fast zombie. It implements the enemy class.
@@ -49,7 +48,7 @@ public class FastZombie implements Enemy {
         height = 40;
         this.x = x;
         this.y = y;
-        zombieImage = new ImageIcon("FastZombieWalk1.png").getImage(); 
+        zombieImage = new ImageIcon("Images/FastZombieWalk1.png").getImage(); 
     }
 /**
 * @public gives the health of the enemy

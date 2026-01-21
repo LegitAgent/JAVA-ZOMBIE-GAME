@@ -18,11 +18,11 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.*;
-import javax.swing.*;
 import java.io.*;
 import java.net.*;
 import java.util.Random;
 import java.util.Scanner;
+import javax.swing.*;
 
 /**
  * The GameFrame is where the calculations for the server and input handling are handled.
@@ -130,7 +130,7 @@ public class GameFrame extends JFrame implements ActionListener {
 
 		music = new MusicPlayer();
         // Silver Surfer - Level 1 - Nes Music (https://www.youtube.com/watch?v=-J0H5ah1G7A)
-        music.playMusic("WaveMusic.wav", true, false);
+        music.playMusic("audio/WaveMusic.wav", true, false);
 		
 		Timer timer = new Timer(10, this);
 		timer.start();
@@ -320,17 +320,17 @@ public class GameFrame extends JFrame implements ActionListener {
 					String bulletName = playerMain.getBullet().getBulletName();
 					// plays sounds based on what weapon the player is holding
 					if(bulletName.equals("bowBullet")) {
-						music.playMusic("Bow_Fire.wav", false, false);
+						music.playMusic("Audio/Bow_Fire.wav", false, false);
 					} else if(bulletName.equals("slingBullet")) {
-						music.playMusic("Slingshot_Fire.wav", false, false);
+						music.playMusic("Audio/Slingshot_Fire.wav", false, false);
 					} else {
 						int bulletSound = rand.nextInt(2);
 						switch(bulletSound) {
 							case 0:
-								music.playMusic("Pistol_Shot.wav", false, true);
+								music.playMusic("Audio/Pistol_Shot.wav", false, true);
 								break;
 							case 1:
-								music.playMusic("Pistol_Shot2.wav", false, true);
+								music.playMusic("Audio/Pistol_Shot2.wav", false, true);
 								break;
 						}
 					}
@@ -613,17 +613,17 @@ public class GameFrame extends JFrame implements ActionListener {
 							String bulletName = playerSide.getBullet().determineName(sidePlayerGunType);
 
 							if(bulletName.equals("bowBullet")) {
-								music.playMusic("Bow_Fire.wav", false, false);
+								music.playMusic("Audio/Bow_Fire.wav", false, false);
 							} else if(bulletName.equals("slingBullet")) {
-								music.playMusic("Slingshot_Fire.wav", false, false);
+								music.playMusic("Audio/Slingshot_Fire.wav", false, false);
 							} else {
 								int bulletSound = rand.nextInt(2);
 								switch(bulletSound) {
 									case 0:
-										music.playMusic("Pistol_Shot.wav", false, true);
+										music.playMusic("Audio/Pistol_Shot.wav", false, true);
 										break;
 									case 1:
-										music.playMusic("Pistol_Shot2.wav", false, true);
+										music.playMusic("Audio/Pistol_Shot2.wav", false, true);
 										break;
 								}
 							}
