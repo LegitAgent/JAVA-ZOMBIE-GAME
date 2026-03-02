@@ -65,7 +65,7 @@ public class GameCanvas extends JComponent {
     ImageIcon bigZombieWalk2 = new ImageIcon("Images/BigZombieWalk2.png");
     ImageIcon bigZombieWalk3 = new ImageIcon("Images/BigZombieWalk3.png");
     ImageIcon bigZombieWalk4 = new ImageIcon("Images/BigZombieWalk4.png");
-    ImageIcon bigZombieAttack1 = new ImageIcon("B=Images/BigZombieAttack2.png");
+    ImageIcon bigZombieAttack1 = new ImageIcon("Images/BigZombieAttack2.png");
 
     // Fast Zombie Animation Frames
     ImageIcon fastZombieWalk1 = new ImageIcon("Images/FastZombieWalk1.png");

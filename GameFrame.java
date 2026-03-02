@@ -75,13 +75,12 @@ public class GameFrame extends JFrame implements ActionListener {
 
         canvas = new GameCanvas(frame);
 
-        createPlayers();
         ih = new InputHandling();
         shop = new ShopMenu(frame, playerMain);
 
         frame.add(canvas);
 
-        stringHealthNumber = Integer.toString((int) playerMain.getHealth());
+        stringHealthNumber = Integer.toString(0);
 
         frame.setFocusable(true);
         frame.requestFocus();
@@ -106,6 +105,7 @@ public class GameFrame extends JFrame implements ActionListener {
     public void setUpGUI() {
         frame.pack();
 
+        createPlayers();
         if (singlePlayer) {
             singlePlayerSettings();
             shop.changePlayer(playerMain);
@@ -293,17 +293,17 @@ public class GameFrame extends JFrame implements ActionListener {
                     String bulletName = playerMain.getBullet().getBulletName();
                     // plays sounds based on what weapon the player is holding
                     if (bulletName.equals("bowBullet")) {
-                        music.playMusic("Audio/Bow_Fire.wav", false, false);
+                        music.playMusic("audio/Bow_Fire.wav", false, false);
                     } else if (bulletName.equals("slingBullet")) {
-                        music.playMusic("Audio/Slingshot_Fire.wav", false, false);
+                        music.playMusic("audio/Slingshot_Fire.wav", false, false);
                     } else {
                         int bulletSound = rand.nextInt(2);
                         switch (bulletSound) {
                             case 0:
-                                music.playMusic("Audio/Pistol_Shot.wav", false, true);
+                                music.playMusic("audio/Pistol_Shot.wav", false, true);
                                 break;
                             case 1:
-                                music.playMusic("Audio/Pistol_Shot2.wav", false, true);
+                                music.playMusic("audio/Pistol_Shot2.wav", false, true);
                                 break;
                         }
                     }
@@ -590,17 +590,17 @@ public class GameFrame extends JFrame implements ActionListener {
                             String bulletName = playerSide.getBullet().determineName(sidePlayerGunType);
 
                             if (bulletName.equals("bowBullet")) {
-                                music.playMusic("Audio/Bow_Fire.wav", false, false);
+                                music.playMusic("audio/Bow_Fire.wav", false, false);
                             } else if (bulletName.equals("slingBullet")) {
-                                music.playMusic("Audio/Slingshot_Fire.wav", false, false);
+                                music.playMusic("audio/Slingshot_Fire.wav", false, false);
                             } else {
                                 int bulletSound = rand.nextInt(2);
                                 switch (bulletSound) {
                                     case 0:
-                                        music.playMusic("Audio/Pistol_Shot.wav", false, true);
+                                        music.playMusic("audio/Pistol_Shot.wav", false, true);
                                         break;
                                     case 1:
-                                        music.playMusic("Audio/Pistol_Shot2.wav", false, true);
+                                        music.playMusic("audio/Pistol_Shot2.wav", false, true);
                                         break;
                                 }
                             }
